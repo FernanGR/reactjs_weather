@@ -1,17 +1,14 @@
-import React from 'react';
+import React  from 'react';
+import WeatherEngine from "./components/WeatherEngine";
 
-import WeatherCard from './components/WeatherCard/component';
-import './App.css';
+ import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-    <WeatherCard temp={-20}/>
-    <WeatherCard temp={10}/>
-    <WeatherCard temp={35}/>
-
-    </div>
-  );
+  return <div className="App">
+  <WeatherEngine location = "london"/>
+  <WeatherEngine location = "spain"/>
+  <WeatherEngine location = "sydney"/>
+  </div>
 }
 
 export default App;
